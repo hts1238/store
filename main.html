@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+	<head>
+		<title>Unicorns are awesome!</title>
+		<link rel="stylesheet" type="text/css" href="styles/main_style.css">
+		<!--<link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">-->
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+
+		<header>
+
+			<div id="menu_icon">
+				<svg viewBox="0 0 12 10">
+					<symbol id="menu_sumb">
+						<circle cx="1" cy="1" r="1" fill="#fff" />
+						<circle cx="11" cy="1" r="1" fill="#fff" />
+						<rect x="1" y="0" height="2" width="10" fill="#fff" />
+					</symbol>
+					<use xlink:href="#menu_sumb" x="0" y="0" />
+					<use xlink:href="#menu_sumb" x="0" y="4" />
+					<use xlink:href="#menu_sumb" x="0" y="8" />
+				</svg>
+			</div>
+
+			<h1>Main page of our store!</h1>
+
+			<div id="pict_icon">
+				<svg viewBox="0 0 12 10">
+					<use xlink:href="#menu_sumb" x="0" y="0" />
+					<use xlink:href="#menu_sumb" x="0" y="4" />
+					<use xlink:href="#menu_sumb" x="0" y="8" />
+				</svg>
+			</div>
+
+		</header>
+
+
+		<main>
+
+			<div id="mpop"></div>
+
+		</main>
+
+
+		<footer>
+
+		</footer>
+
+		<script src="../jquery.min.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/most_popular.json"></script>
+
+	</body>
+
+</html>

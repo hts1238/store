@@ -1,0 +1,149 @@
+:root {
+	--first-color: #fff;
+	--second-color: #00c;
+	--second-tran-color: #00cf;
+}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+	font-family: Lucida Console;
+	cursor: default;
+	background-color: var(--first-color);
+}
+
+
+
+/* ========= Header styles ========= */
+	header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		margin: 0px;
+		padding: 1%;
+
+		background-color: #00c;
+	}
+
+
+	header > * {
+		flex: 1 0 5%;
+
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	header > h1 {
+		flex: 3 1 90%;
+
+		text-align: center;
+		color: #fff;
+	}
+
+
+	header > div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	svg {
+		position: relative;
+		padding: 0px;
+		margin: 0px;
+		width: 60%;
+		height: 60% !important;
+	}
+/* ===== End of header styles ====== */
+
+
+
+/* ========== Main styles ========== */
+	main {
+		width: 100%;
+		margin: 1.5% 0;
+	}
+
+
+	div#mpop {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	div#mpop > * {
+		flex: 1 1 50%;
+	}
+
+	div#text {
+		padding: 0;
+		padding-left: 3%;
+		height: ;
+	}
+
+	img {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	svg#triangle {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	svg#triangle > path {
+		fill: var(--second-tran-color);
+	}
+/* ====== End of main styles ======= */
+
+
+
+/* ======== Scrollbar styles ======== */
+	::-webkit-scrollbar-button {
+		background-image: url('');
+		background-repeat: no-repeat;
+		width: 6px;
+		height: 0px;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: #32312e;
+		box-shadow: 0px 0px 3px #000 inset;
+	}
+
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color: #ffcb17;
+		box-shadow: 0px 1px 1px #fff inset;
+		background-image: url('https://yraaa.ru/_pu/24/59610063.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	::-webkit-resizer{
+		background-image: url('');
+		background-repeat: no-repeat;
+		width: 7px;
+		height: 0px;
+	}
+
+	::-webkit-scrollbar{
+	 width: 11px;
+	}
+/* ==== End of scrollbar styles ===== */

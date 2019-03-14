@@ -1,0 +1,11 @@
+load_most_popular_div(
+	{
+		text: {
+			h2: "Most popular!",
+			p: "Some text.<br>Some incomprehensible text.<br>Bla bla bla..."
+		},
+		pict: {
+			img: "styles/log1.svg"
+		}
+	}
+);

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+        <title>Log in</title>
+    </head>
+    <body>
+        <a href="reg_page.html">Don't you have an account yet?</a>
+        <form class="frm" action="log_in.php" method="post">
+            <fieldset>
+                <legend>Log in</legend>
+                <p><label>Email *</label><br><input type="email" name="email" id="email" required></p>
+                <p><label>Password  *</label><br><input type="password" name="password" id="password" required></p>
+                <div class="message" id="message"></div>
+            </fieldset>   
+            <p class="pbutton"><input class="button" id="but_submit" type="submit" name="send" value="Отправить"></p>
+        </form>
+        <script src="log_in_ajax.js"></script>
+    </body>
+</html>

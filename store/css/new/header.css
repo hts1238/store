@@ -1,0 +1,11 @@
+nav.header {
+    background-color: #f8f9fa;
+}
+
+nav.header button {
+    background-color: #fff0;
+}
+
+nav.header svg {
+    width: 30px;
+}

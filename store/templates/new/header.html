@@ -16,8 +16,11 @@
     </button>
     <div>
         <div>
-            <a href="./home.php">Home</a>
-            <a href="./sign_in_up.php">Sign in/up</a>
+            <?php
+                foreach ($menu as $name => $href) {
+                    echo "<a href=\"".$href."\">".$name."</a>\n";
+                }
+            ?>
         </div>
     </div>
 </nav>

@@ -2,6 +2,10 @@
     include_once('functions.php');
     $message = "";
     session_start();
+
+    if (checkUser()) {
+        header("Location: personal_area.php");
+    }
     
     if (isset($_POST['flag']) && $_POST['flag'] == "in" && isset($_POST['email'])) {    // Sign In
         $email = htmlentities($_POST['email']);

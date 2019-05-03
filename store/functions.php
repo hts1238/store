@@ -1,6 +1,17 @@
 <?php
     function connect () {
-        $db = mysqli_connect('localhost', 'root', '', 'store');
+        $DB_HOST = "localhost";
+        $DB_LOGIN = "u216556_store";
+        $DB_PASSWORD = "011470";
+        $DB_NAME = "u216556_store";
+
+        $db = mysqli_connect(
+            $DB_HOST,
+            $DB_LOGIN,
+            $DB_PASSWORD,
+            $DB_NAME
+        );
+        
         mysqli_set_charset($db, 'utf8');
         return $db;
     }

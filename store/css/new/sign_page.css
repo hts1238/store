@@ -1,0 +1,92 @@
+#sign_page {
+    margin: 0;
+    padding: 1px 0;
+    background-color: #f6f5f7;
+    font-family: 'Motserrat', sans-serif;
+}
+
+#sign_page input {
+    background-color: #eee;
+    border-width: 0;
+    padding: 10px;
+}
+
+#sign_page button {
+    background-color: #ff4b2b;
+    border-width: 0px;
+    padding: 10px 25px;
+    color: #fff;
+}
+
+#sign_page #before button {
+    background-color: #fff0;
+    border: 1px solid #fff;
+}
+
+#sign_page * {
+    color: #000;
+    border-radius: 20px;
+}
+
+#sign_page > div {
+    height: 500px;
+    width: 80%;
+    margin: 5% auto;
+    
+    position: relative;
+}
+
+#sign_page #sign_in {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    
+    background-color: #ffff;
+}
+
+#sign_page #sign_up {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    
+    background-color: #ffff;
+}
+
+#sign_page #before {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 3;
+    
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background-size: cover;
+    background-position: 0 0;
+    
+    overflow: hidden;
+}
+
+#sign_page #before > div {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#sign_page #before #left {
+    left: -100%;
+}
+
+#sign_page #before #right {
+    left: 0;
+}
+
+#sign_page #before * {
+    color: #fff;
+}

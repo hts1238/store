@@ -7,3 +7,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+* {
+    cursor: default;
+}
+
+button, button *, a, a * {
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+}

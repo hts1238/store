@@ -3,7 +3,8 @@
 
     $title = "Sign in/up";
     $menu = Array(
-        "Home" => "home.php"
+        "Home" => "home.php",
+        "Sign In/Up" => "sign_in_up.php"
     );
 
     /*if (checkUser()) {
@@ -14,6 +15,6 @@
 
     view("templates/start_page.html", compact("title"));
     view('templates/new/header.html', compact("menu"));
-    view('templates/new/sign_page.html');
+    //view('templates/new/sign_page.html');
     view('templates/end_page.html');
 ?>

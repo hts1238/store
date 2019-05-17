@@ -1,12 +1,86 @@
 nav.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
     background-color: #f8f9fa;
     box-shadow: 0 5px 30px #0004;
+    z-index: 1;
+    overflow: hidden;
 }
 
-nav.header button {
+nav.header > a {
+    font-size: 200%;
+    padding: 8px;
+}
+
+nav.header > button {
+    width: 40px;
+    height: 40px;
     background-color: #fff0;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px;
+    border: 1px solid #aaa;
+}
+
+nav.header > div {
+    flex-grow: 1;
+    padding: 18px;
+}
+
+nav.header > div a, div.header a {
+    text-decoration: none;
+    color: gray;
+    margin: 6px;
 }
 
 nav.header svg {
     width: 30px;
+}
+
+div.header {
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 30px #0004;
+    
+    display: flex;
+    flex-direction: column;
+	transition: 0.6s ease-in-out;
+}
+
+div.header a {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+    
+div.header > a:hover {
+    background: linear-gradient(170deg, #eee, #ddd);
+    color: #777;
+}
+
+@media screen and (min-width: 800px) {
+    
+    nav.header > button, div.header {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 799px) {
+    
+    nav.header > div {
+        display: none;
+    }
+    
+    div.header {
+        height: 0px;
+        overflow: hidden;
+    }
+    
 }

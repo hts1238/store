@@ -38,14 +38,14 @@
                 ;";
                 mysqli_query($connect, $sql); 
                 setcookie("token", $token);
-                header('Location: home.php');
+                header('Location: ./');
             } else {
                 $message = "Данные введены неправильно";
             }
         } else {
             echo mysqli_connect_error($connect);
         }
-        mysqli_close($connect);    
+        mysqli_close($connect);
     } 
 
 
@@ -134,7 +134,12 @@
     }
     
     $title = 'Sign In/Up';
-    view('templates/common/header.html', compact('title'));
-    view('templates/sign/sign_page.html', compact('message'));
-    view('templates/common/footer.html');
+    $menu = [
+        "Home" => "./"
+    ];
+
+    view("templates/start_page.html", compact("title"));
+    view('templates/new/header.html', compact("menu"));
+    view('templates/new/sign_page.html');
+    view('templates/end_page.html');
 ?>

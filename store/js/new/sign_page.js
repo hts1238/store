@@ -6,8 +6,6 @@ $(function() {
     let $right_block = $("#sign_page #right");
     let $buttons = $("#sign_page #left button, #sign_page #right button");
 
-    console.log($buttons);
-
     $buttons.on("click", function(e) {
         let text = e.target.innerText;
         if (text == $buttons[1].innerText) {
